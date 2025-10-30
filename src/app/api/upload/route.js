@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import ImageKit from "imagekit";
 
 // ✅ MongoDB connection URI (local)
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/csbs";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://username:password@cluster0.mongodb.net/csbs";
 
 // ✅ Connect to MongoDB (only once)
 if (!mongoose.connection.readyState) {

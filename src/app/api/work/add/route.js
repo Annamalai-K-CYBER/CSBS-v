@@ -6,7 +6,7 @@ let isConnected = false;
 async function connectDB() {
   if (isConnected) return;
   try {
-    await mongoose.connect("mongodb://127.0.0.1:27017/csbs", {
+    await mongoose.connect("mongodb+srv://username:password@cluster0.mongodb.net/csbs", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });

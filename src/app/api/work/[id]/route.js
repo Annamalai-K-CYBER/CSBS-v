@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 // ✅ MongoDB Connection
 if (!mongoose.connection.readyState) {
-  await mongoose.connect("mongodb://localhost:27017/csbs", {
+  await mongoose.connect("mongodb+srv://username:password@cluster0.mongodb.net/csbs", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });

@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import mongoose from "mongoose";
 
 if (!mongoose.connection.readyState) {
-  await mongoose.connect(process.env.MONGO_URI);
+  await mongoose.connect(process.env.MONGO_URI||"mongodb+srv://username:password@cluster0.mongodb.net/csbs");
 }
 
 const workSchema = new mongoose.Schema({
