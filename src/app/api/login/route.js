@@ -6,7 +6,7 @@ import { NextResponse } from "next/server";
 // ✅ Connect MongoDB once
 if (mongoose.connection.readyState === 0) {
   mongoose
-    .connect(process.env.MONGODB_URI || "mongodb+srv://username:password@cluster0.mongodb.net/csbs")
+    .connect("mongodb+srv://username:password@cluster0.mongodb.net/csbs")
     .then(() => console.log("✅ MongoDB connected"))
     .catch((err) => console.error("❌ MongoDB error:", err));
 }

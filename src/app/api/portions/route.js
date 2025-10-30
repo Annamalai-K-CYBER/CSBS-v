@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 /* -------------------- MongoDB connect -------------------- */
 if (mongoose.connection.readyState === 0) {
   mongoose
-    .connect(process.env.MONGODB_URI || "mongodb+srv://username:password@cluster0.mongodb.net/csbs")
+    .connect("mongodb+srv://username:password@cluster0.mongodb.net/csbs")
     .then(() => console.log("✅ MongoDB connected (portions)"))
     .catch((err) => console.error("❌ MongoDB error:", err));
 }

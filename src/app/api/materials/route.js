@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 // ✅ Connect to MongoDB
 if (!mongoose.connection.readyState) {
-  await mongoose.connect(process.env.MONGO_URI || "mongodb+srv://username:password@cluster0.mongodb.net/csbs");
+  await mongoose.connect("mongodb+srv://username:password@cluster0.mongodb.net/csbs");
 }
 
 // ✅ Define model (same as in upload route)
